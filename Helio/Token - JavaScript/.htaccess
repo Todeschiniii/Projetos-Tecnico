@@ -1,0 +1,15 @@
+RewriteEngine on
+
+# ❌ Bloqueia acesso direto à pasta "api"
+# F = Forbidden (403), L = Last (interrompe outras regras)
+RewriteRule ^api/ - [F,L]
+
+# ❌ Bloqueia acesso direto à pasta "system"
+# F = Forbidden (403), L = Last (interrompe outras regras)
+RewriteRule ^system/ - [F,L]
+
+
+# ✅ Redireciona requisições que não são arquivos nem diretórios para app.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ api.php
