@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+body {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50px;
+    background: #111;
+    color:white;
+}
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+input {
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 8px;
+}
+button {
+    padding: 10px;
+    background-color: rgb(139, 41, 41);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: rgb(163, 46, 46);
+}
+a {
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.erro { color: red; margin-bottom: 10px; }
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #c09f9f;
+}
+a {
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.edit {
+    background-color: orange;
+    color: white;
+}
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.imagem-fixa {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 500px; /* ajuste conforme necessário */
+  height: auto;  /* mantém a proporção */
+  z-index: 1000; /* garante que fique acima de outros elementos, se necessário */
+}
+
+.header {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    border-bottom: 2px solid #fafafa;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color:  rgb(139, 41, 41);
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1571019613913-37c0e877f235?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+.imagem-fundo {
+    position: fixed;
+  width: 100%; /* ajuste conforme necessário */
+  height: 100%;  /* mantém a proporção */
+  z-index: -1000; /* garante que fique acima de outros elementos, se necessário */
+}
